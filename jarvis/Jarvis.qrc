@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>btn2.jpg</file>
+    <file>btn.jpg</file>
+    <file>btn1.jpg</file>
+    <file>buttonsstop1.jpg</file>
+    <file>buttonsstop.jpg</file>
+    <file>buttonstop.jpg</file>
+    <file>buttonrun2.jpg</file>
+    <file>button run.jpg</file>
+    <file>button.avif</file>
+    <file>jarvisfullgui.gif</file>
+  </qresource>
+</RCC>
