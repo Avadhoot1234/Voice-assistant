@@ -62,8 +62,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('dhumalavadhoot27@gmail.com', 'avadhoot26')
-    server.sendmail('abhay.dhumal9@gmail.com', to, content)
+    server.login('dhumalavadhoot27@gmail.com', '#######')
+    server.sendmail('####@gmail.com', to, content)
     server.close()
 
 class MainThread(QThread):
