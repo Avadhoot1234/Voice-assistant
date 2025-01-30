@@ -214,8 +214,8 @@ class MainThread(QThread):
                 
                 speak("What should I send sir")
                 msz=self.takeCommand()
-                account_sid = 'AC0b87856370c9649ab0029234109c438d'
-                auth_token = '4ecbedc80dba9eed15c7ad739f155661'
+                account_sid = '#'
+                auth_token = '#'
                 client = Client(account_sid, auth_token)
 
                 message = client.messages \
