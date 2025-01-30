@@ -176,7 +176,7 @@ class MainThread(QThread):
                 try:
                     speak("What should I say?")
                     content = self.takeCommand()
-                    to = "abhay.dhumal9@gmail.com"
+                    to = "abc@gmail.com"
                     sendEmail(to, content)
                     speak("Email has been sent!")
                 except Exception as e:
@@ -222,22 +222,22 @@ class MainThread(QThread):
                     .create(
                         body=msz,
                         from_='+15856393761',
-                        to='+918779292839'
+                        to='+123456789'
                     )
 
                 print(message.sid)
                 speak("Sir the message has been sent")
             
             elif "make a phone call" in self.query:
-                account_sid='AC0b87856370c9649ab0029234109c438d'
-                auth_token='4ecbedc80dba9eed15c7ad739f155661'
+                account_sid='#'
+                auth_token='#'
                 client=Client(account_sid,auth_token)
 
                 message=client.calls \
                     .create(
                         twiml='<Response><Say>This is test phone call</Say></Response>',
                         from_='+15856393761',
-                        to='+918779292839'
+                        to='+123456789'
                     )
                 
                 print(message.sid)
@@ -248,7 +248,7 @@ class MainThread(QThread):
                 speak(f"Your IP address is {ip}")
 
             elif "send message" in self.query:
-                kit.sendwhatmsg("+918652172362","This is Testing Protocol Test 5",13,48)
+                kit.sendwhatmsg("+91123456789","This is Testing Protocol Test 5",13,48)
 
             elif "increase the volume" in self.query:
                 pyautogui.press("volumeup")
